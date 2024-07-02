@@ -69,7 +69,9 @@ function clearAll(){
     consecutive = []
     press = false
     check = false
-    result;
+    result = ''
+    firstNumber = ''
+    secondNumber = ''
 }
 
 function num(e){
@@ -101,7 +103,6 @@ function num(e){
 
 }
 function op(e){
-    
     if(check === true){
     press = true
     let value2 = e.target.textContent
@@ -119,16 +120,7 @@ function op(e){
 function cal(){
     firstNumber = +firstNumber
     secondNumber = +secondNumber
-    console.log( firstNumber)
-    console.log(operator)
-    console.log( secondNumber)
     result = operate(firstNumber,operator,secondNumber)
-    console.log(typeof result)
-    let roundresult = String(result)
-    if(roundresult.length >= 8){
-        result = roundresult.slice(0,9)
-        roundresult = ''
-    }
     if(result === Infinity){
         display.textContent = 'Dead'
         displayNum = ''
@@ -138,8 +130,14 @@ function cal(){
     }
     else{
         if(operator === undefined){
-            display.textContent = '0'
+                display.textContent = '0'
         }else{
+            let roundresult = String(result)
+            if(roundresult.length >= 8){
+                result = roundresult.slice(0,9)
+                roundresult = ''
+               
+            }
             display.textContent = result
         }
     }
