@@ -5,4 +5,4 @@ The last Project of Foundation Course of The Odin Project
 
 Live Preview:![alt text](Calculator.png)
 
-Project Link :
+Project Link : https://terminalcmd.github.io/Calculator/
