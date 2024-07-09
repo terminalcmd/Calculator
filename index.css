@@ -1,90 +1,77 @@
+html{
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
 .container{
-    height: 720px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:lightblue;
+    width:99vw;
+    height: 97vh;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     
 }
-.calculator{
-    border : 8px solid ;
-    width: 350px; 
-    background-color: black;
-    border-radius: 10px;
-}
-.btn{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-    margin-top:0px;
-    background-color: black;
-}
 
-button{
-    padding: 35px;
-    font-size: 20px;
-    font-weight: 500;
-    border: 1px solid;
-    border-radius: 8px;
+.calculator{
+    border:6px solid;
+    width:340px;
+    height:520px;
+    border-radius:5px;
+    background-color: black;
+    border-bottom-width:10px;
 }
 .display{
-    font-size: 65px;
+    border:3px solid;
+    font-size:4rem;
+    display:flex;
+    justify-content:flex-end;
+    height: 90px;
+    align-items: flex-end;
+    border-radius: 5px;
+    background-color: white;
+    border-bottom-width: 4px;
+}
+.btn{
+    margin-top:0px;
+    height: 82%;
     display: flex;
-    justify-content: flex-end;
-    border: 2px solid;
-    align-items: end;
-    height: 100px;
-    border-bottom: 4px solid;
-    background-color: grey;
-    border-radius: 9px;
+    flex-wrap: wrap;
+    align-content: center;
+    gap:5px;
+    justify-content: center;
+    background-color: black;
+    
 }
-#allc{
-    width:83.29px ;
-    height: 94.8px;
-}
-#minus{
-    width:83.29px ;
-    height: 94.8px;
-}
-#multi{
-    width:83.29px ;
-    height: 94.8px;
-}
-#div{
-    width:83.29px ;
-    height: 94.8px;
-}
-#eq{
-    width:83.29px ;
-    height: 94.8px;
-}
-.num{
-    background-color: rgb(61, 126, 240);
-}
-.op{
-    background-color: rgb(67, 236, 67);
-}
-.equal{
-    background-color: rgb(67, 236, 67);
+button{
+    font-size:1.5rem;
+    width: 80px;
+    height:80px;
+    border-radius:5px;
+    border:1px solid;
 }
 .clear{
-    background-color: rgb(235, 34, 34);
+    width: 165px;
+    background-color: rgb(234, 47, 47);
 }
-.num:hover{
-    opacity: .5;
+#zero{
+    width: 165px;
 }
-.op:hover{
-    opacity: .5;
+.num{
+    background-color: rgb(43, 171, 213);
 }
-.equal:hover{
-    opacity: .5;
+.op{
+    background-color:rgb(85, 238, 85);
 }
-.clear:hover{
-    opacity: .5;
+.point{
+    background-color: rgb(43, 171, 213); 
 }
-
-
-
-
+.equal{
+    background-color: rgb(255, 153, 0);
+}
+.del{
+    background-color:grey;
+    font-weight:600
+}
+button:hover{
+    opacity:0.6
+}

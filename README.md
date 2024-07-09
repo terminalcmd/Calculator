@@ -1,8 +1,8 @@
 # Calculator
-A calculator with basic functionality
+A calculator with some extra credits except keyboard support
 
 The last Project of Foundation Course of The Odin Project
 
-Live Preview:![alt text](Calculator.jpg)
+Live Preview:![alt text](Calculator.png)
 
-Project Link :https://terminalcmd.github.io/Calculator/
+Project Link :
