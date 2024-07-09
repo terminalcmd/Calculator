@@ -89,13 +89,17 @@ function allClear(){
 
 function del(){
     if(operator === ''){
-        displayValue = displayValue.slice(0,displayValue.length-1)
+        displayValue = displayValue.slice(0,-1)
         firstNumber = displayValue
+        if(!firstNumber.includes('.'))
+            dotpress = true
         display.textContent = firstNumber
         console.log(`${firstNumber} ${operator} ${secondNumber}`)
     }else{
-        displayValue = displayValue.slice(0,displayValue.length-1)
+        displayValue = displayValue.slice(0,-1)
         secondNumber = displayValue
+        if(!secondNumber.includes('.'))
+            dotpress = true
         display.textContent = secondNumber
         console.log(secondNumber)
         console.log(`${firstNumber} ${operator} ${secondNumber}`)
